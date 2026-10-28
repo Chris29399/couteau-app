@@ -1,38 +1,25 @@
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
 import { Navigate, Route } from 'react-router-dom';
+import {
+  IonApp,
+  IonRouterOutlet,
+  setupIonicReact,
+} from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
 
-import Home from './pages/Home';
-
-/* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
-
-/* Basic CSS for apps built with Ionic */
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';
-
-/* Optional CSS utils that can be commented out */
-import '@ionic/react/css/padding.css';
-import '@ionic/react/css/float-elements.css';
-import '@ionic/react/css/text-alignment.css';
-import '@ionic/react/css/text-transformation.css';
-import '@ionic/react/css/flex-utils.css';
-import '@ionic/react/css/display.css';
-
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
-
-/* import '@ionic/react/css/palettes/dark.always.css'; */
-/* import '@ionic/react/css/palettes/dark.class.css'; */
-import '@ionic/react/css/palettes/dark.system.css';
-
-/* Theme variables */
 import './theme/variables.css';
+
+import Inicio from './pages/Inicio';
+import Genero from './pages/Genero';
+import Persona from './pages/Persona';
+import Universidades from './pages/Universidades';
+import Clima from './pages/Clima';
+import Pokemon from './pages/Pokemon';
+import Noticias from './pages/Noticias';
+import AcercaDe from './pages/AcercaDe';
 
 setupIonicReact();
 
@@ -40,8 +27,16 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/inicio" element={<Inicio />} />
+        <Route path="/genero" element={<Genero />} />
+        <Route path="/persona" element={<Persona />} />
+        <Route path="/universidades" element={<Universidades />} />
+        <Route path="/clima" element={<Clima />} />
+        <Route path="/pokemon" element={<Pokemon />} />
+        <Route path="/noticias" element={<Noticias />} />
+        <Route path="/acercade" element={<AcercaDe />} />
+
+        <Route path="/" element={<Inicio />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
