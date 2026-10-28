@@ -23,7 +23,7 @@ const Inicio: React.FC = () => {
     { titulo: 'Clima', ruta: '/clima' },
     { titulo: 'Pokémon', ruta: '/pokemon' },
     { titulo: 'Noticias de WordPress', ruta: '/noticias' },
-    { titulo: 'Acerca de mí', ruta: '/acerca' },
+    { titulo: 'Acerca de mí', ruta: '/acercade' },
   ];
 
   return (
@@ -39,11 +39,11 @@ const Inicio: React.FC = () => {
           <img
             src="./public/toolbox.jpg"
             alt="Caja de herramientas"
-            style={{ width: '100%', maxHeight: '220px', objectFit: 'cover' }}
+            style={{ width: '100%', maxHeight: '220px', objectFit: 'contain' }}
           />
 
           <IonCardHeader>
-            <IonCardTitle>Bienvenido</IonCardTitle>
+            <IonCardTitle>¡Bienvenido!</IonCardTitle>
           </IonCardHeader>
 
           <IonCardContent>
