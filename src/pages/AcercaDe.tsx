@@ -22,15 +22,13 @@ import {
   informationCircleOutline,
 } from 'ionicons/icons';
 
-// Personaliza estos datos antes de entregar el proyecto.
 const Nombre = 'Cristopher';
 const Apellido = 'Linares';
 const Correo = 'ctlp29399@gmail.com';
 const Telefono = '829-341-2175';
 const Asignatura = 'Introducción al Desarrollo de Aplicaciones Móviles';
 
-// Coloca tu foto en public/foto_perfil.jpg
-const imgPerfil = './public/profile_picture.jpeg';
+const imgPerfil = './profile_picture.jpeg';
 
 const Acerca: React.FC = () => {
   return (
@@ -54,7 +52,7 @@ const Acerca: React.FC = () => {
                 margin: '16px auto',
               }}
             >
-              <img src={imgPerfil} alt="Foto de perfil del estudiante" />
+              <img src={imgPerfil} alt="Foto de perfil" />
             </IonAvatar>
 
             <h1>

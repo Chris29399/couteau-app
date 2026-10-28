@@ -227,10 +227,6 @@ const Pokemon: React.FC = () => {
             </IonCard>
           </>
         )}
-
-        <p style={{ fontSize: '12px', color: '#777' }}>
-          Fuente: PokéAPI. Los datos se consultan en línea.
-        </p>
       </IonContent>
     </IonPage>
   );

@@ -37,7 +37,7 @@ const Inicio: React.FC = () => {
       <IonContent className="ion-padding">
         <IonCard>
           <img
-            src="./public/toolbox.jpg"
+            src="./toolbox.jpg"
             alt="Caja de herramientas"
             style={{ width: '100%', maxHeight: '220px', objectFit: 'contain' }}
           />
