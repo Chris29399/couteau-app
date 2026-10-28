@@ -35,7 +35,7 @@ const App: React.FC = () => (
         <Route path="/pokemon" element={<Pokemon />} />
         <Route path="/noticias" element={<Noticias />} />
         <Route path="/acercade" element={<AcercaDe />} />
-
+        
         <Route path="/" element={<Inicio />} />
       </IonRouterOutlet>
     </IonReactRouter>
